@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario by Euge Mora</title>
+    <link rel="shortcut icon" href="./public/assets/icono_form.png" type="image/x-icon">
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+    
+    <!--Contenedor del formulario-->
+    <div class="form-container">
+        <form id="form">
+
+            <!--Primer Input-->
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <!--Segundo Input-->
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+
+            <!--Select con 6 opciones-->
+            <div class="form-group">
+                <label for="select">Selecciona tu ciudad favorita</label>
+                <select id="select" name="select" required>
+                    <option value="">Selecciona...</option>
+                    <option value="sanMartin">San Martin de los Andes</option>
+                    <option value="villaLaAngostura">Villa La Angostura</option>
+                    <option value="pehuenia">Villa Pehuenia</option>
+                    <option value="bariloche">Bariloche</option>
+                    <option value="elBolson">El Bolson</option>
+                    <option value="juninDeLosAndes">Junin de los Andes</option>
+                </select>
+            </div>
+
+            <!--TextArea para comentarios o informacion adicional-->
+            <div class="form-group">
+                <label for="textArea">Informacion que quieres recibir</label>
+                <textarea id="textArea" name="textArea" rows="4" required></textarea>
+            </div>
+
+            <!--Boton para enviar el formulario-->
+            <div class="form-group">
+                <button type="button" id="submitButton">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>By Eugenia Mora. @FrontEnd 2024</p>
+    </footer>
+
+    <!--Enlace al script que le da la funcionalidad-->
+    <script src="./public/script.js"></script>
+
+</body>
+</html>
